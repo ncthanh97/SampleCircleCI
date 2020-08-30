@@ -7,4 +7,4 @@ jobs:
         - image: circleci/node:13.12.0
       steps:
         - checkout
-        - run: npm run test
+        - run: npm test
