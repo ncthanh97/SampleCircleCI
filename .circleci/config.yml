@@ -4,4 +4,9 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      - run: npm run test
+      build:
+        docker:
+          - image: circleci/node:13.12.0
+        steps:
+          - checkout
+          - run: npm run test
